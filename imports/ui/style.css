@@ -1,0 +1,677 @@
+html{
+  height: 100%;
+}
+
+body {  
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #f7f6f6;
+  height: 100%;
+
+}
+ .nav{
+  display: flex; 
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(251, 175, 93);
+  box-shadow: 0px 0px 21px 0px rgba(0, 74, 128, 0.75);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 224;
+ }
+
+ .logo a{
+  font-size: 48px;
+  font-family: "RobotoCondensed";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-decoration: none;
+  z-index: 226;
+ }
+
+ .logo sup {
+   font-size: 20px;
+   font-family: "RobotoCondensed";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+ }
+
+ .navigation-links a{
+  font-size: 30px;
+  font-family: "RobotoCondensed";
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  line-height: 1.2;
+ }
+.linknot{  
+  display: flex;
+  width: 10%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+ .notif{
+
+   position: relative;
+   
+ }
+ .alarm-1{
+   position: absolute;
+   bottom: 0px;
+   right: -10px;
+   font-family: "Gadugi";
+ }
+ .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+ .section1{
+
+    background: url('/img/banner.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:right;
+    width: 100%;
+    height: 100vh;
+
+  }
+
+  .text-card {
+      display: inline-block;
+      text-align: left;
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      z-index: 172;
+      width: 40%;
+    }
+    
+
+  .text-card h1 {  font-size: 1.4rempx;
+    font-family: "Gadugi";
+    color: rgb(254, 195, 66);
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  .text-card p{
+    font-size: 1.2rem;
+    font-family: "Gadugi";
+    color: rgb(4, 1, 0);
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: left;
+
+  }
+
+  .col3 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    
+  }
+  .column {
+    width: 25%;
+    font-size: 1.2rem;
+    font-family: "Gadugi";
+    color: rgb(49, 40, 26);
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: left;
+ 
+  }
+
+  .column h2{
+    font-size: 1.4rem;
+    font-family: "Gadugi";
+    color: rgb(255, 162, 65);
+    font-weight: bold;
+    line-height: 1.333;
+    text-align: left;
+  }
+
+  /* Section 2 */
+
+  .section2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    background-color: rgb(189, 140, 191);
+    width: 100%;
+    height: 800px;
+
+  }
+  .donut-shapes{
+    width: 100%;
+  }
+  .donut-shapes img{
+    padding: 10px;
+    cursor: pointer;
+  }
+  .donut-shapes img:hover{
+    padding: 20px;
+    border: solid 2px white;
+    border-radius: 70px;
+  }
+  .form-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 800px;
+    background-color: rgb(68, 14, 98);
+    border-radius: 50px;
+    font-size: 24px;
+    font-family: "Gadugi";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    margin-top: 100px;
+  }
+
+  .radio {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+    input[type='radio']:after {
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+      background-color:  rgb(68, 14, 98);
+      content: '';
+      display: inline-block;
+      visibility: visible;
+      border: 2px solid rgb(57, 181, 74);
+  }
+  input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(57, 181, 74);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(57, 181, 74);
+}
+  input[type='text'], input[type='number'], input[type='email'], input[type='password']  {
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    height: 40px;
+    margin: 20px 0;
+  }
+
+  input[type='text']::placeholder, input[type='number']::placeholder, input[type='email']::placeholder,
+  input[type='password']::placeholder{
+    padding: 20px;
+    font-size: 18px;
+    font-family: "Gadugi";
+    color: rgb(64, 63, 63);
+    line-height: 1.2;
+    text-align: left;
+  }
+
+input[type='submit']{
+    border-radius: 10px;
+    border: 2px solid rgb(242, 109, 125);;
+    background-color: rgb(242, 109, 125);
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-family: "Gadugi";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    cursor: pointer;
+  
+  }
+
+  .donut{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 50px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 21px 21px 0px rgba(239, 234, 234, 0.75);
+      width: 100%;
+      height: 170px;
+      z-index: 90;
+      margin: 5% 0;
+      
+    }
+    .name{
+      display: flex;
+      align-items: center;
+    
+    }
+    .name h3{
+        font-size: 30px;
+        font-family: "Gadugi";
+        color: rgb(64, 63, 63);
+        line-height: 1.2;
+        text-align: left;
+        margin-left: 10px;
+
+      }
+    .name p{
+        font-size: 18px;
+        font-family: "Gadugi";
+        color: rgb(123, 123, 123);
+        line-height: 1.2;
+        text-align: left;
+        margin-left: 10px;
+ 
+      
+    }
+      
+  .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+.price p {
+    font-size: 30px;
+    font-family: "Gadugi";
+    color: rgb(0, 74, 128);
+    line-height: 1.2;
+    text-align: left;
+    margin-right: 30px;
+}
+
+.price img{
+  margin: 0 20px;
+}
+
+.arrow{
+  cursor: pointer;
+}
+
+/* login form styles */
+.form-page{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 10% auto;
+}
+
+.login-form, .register-form{
+  
+  width: 20%;
+}
+#forgot-password{
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(135, 129, 189);
+  width: 80%;
+  height: 49px;
+  z-index: 204;
+  font-size: 18px;
+  font-family: "Gadugi";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  cursor: pointer;
+}
+
+#login{
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(0, 191, 243);
+    height: 50px;
+    z-index: 205;
+    font-size: 18px;
+    font-family: "Gadugi";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    margin-left: -20px;
+    cursor: pointer;
+ 
+  }
+
+  #register{
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(0, 191, 243);
+    height: 50px;
+    width: 100%;
+    z-index: 205;
+    font-size: 18px;
+    font-family: "Gadugi";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    cursor: pointer;
+  }
+
+/*------------------ Footer styles---------------------------*/
+  .footer-donut{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
+.footer{
+  background: #f7f6f6;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-btn{
+
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+.cta, .subscribe{
+  width: 50%;
+}
+.cta{
+  width: 30%;
+  height: 44px;
+  font-size: 1.5rem;
+  font-family: "Gadugi";
+  color: rgb(172, 168, 168);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+ 
+}
+
+.subscribe{
+  font-size: 1.5rem;
+  font-family: "Gadugi";
+  color: rgb(243, 198, 32);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: right;
+ 
+}
+.footer-logo{
+  margin: 10% 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "RobotoCondensed";
+  color: rgb(236, 199, 85);
+  font-weight: bold;
+  line-height: 1.2;
+    
+}
+
+.footer-logo sup{
+  font-size: 1rem;
+}
+
+#sub-email{
+  border-radius: 10px;
+  background-color: rgb(240, 110, 170);
+  width: 50%;
+  height: 40px;
+
+}
+
+#sub-email::placeholder{
+    padding: 20px;
+    font-size: 18px;
+    font-family: "Gadugi";
+    color: rgb(64, 63, 63);
+    text-align: left;
+}
+
+#sub-btn{
+   border-radius: 10px;
+    border: 0;
+    background-color:rgb(251, 175, 93);
+    height: 42px;
+    font-size: 18px;
+    font-family: "Gadugi";
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-left: -25px;
+   
+    cursor: pointer;
+}
+
+
+
+/* -------------------------------------Media queries-------------------- */
+@media (min-width: 1280px) and (max-width: 1600px) {
+  .form-page{
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .form-page{
+    width: 100%;
+    justify-content: space-around;
+  }
+  .login-form, .register-form{
+    width: 40%;
+  }
+  .section1{
+    background: url('/img/banner.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:right;
+    width: 100%;
+    height: 80vh;
+
+  }
+ }
+ 
+@media  (min-width: 768px) and (max-width: 1024px) { 
+  .form-page{
+    width: 100%;
+  }
+  .login-form, .register-form{
+    width: 40%;
+  }
+ .section1{
+    background: url('/img/banner-medium.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position:top;
+    width: 100%;
+    height: 50vh;
+ }
+ .col3{
+   width: 100%;
+ }
+.column{
+  width: 100%;
+}
+.text-card {
+  display: inline-block;
+  text-align: left;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  z-index: 172;
+  width: 50%;
+
+}
+.text-card h1 {  font-size: 1.4rempx;
+  font-family: "Gadugi";
+  color: rgb(255, 162, 65);
+  font-weight: bold;
+  line-height: 1.2;
+}
+.text-card p{
+  font-size: 1.2rem;
+  font-family: "Gadugi";
+  color: rgb(49, 40, 26);
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+
+}
+.donut{
+  width: 100%;
+}
+.name{
+  margin-right: 30px;
+}
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .form-page{
+    width: 100%;
+  }
+  .login-form, .register-form{
+    width: 70%;
+  }
+  .section1{
+    background: url('/img/banner.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position:top;
+    width: 100%;
+    height: 30vh;
+ }
+ .col3{
+  width: 100%;
+  margin: 3%;
+}
+.column{
+ width: 100%;
+ margin: 0 3%;
+}
+
+.text-card {
+  display: inline-block;
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  z-index: 172;
+  width: 40%;
+  
+}
+.text-card h1 {  font-size: 1.4rempx;
+  font-family: "Gadugi";
+  color: rgb(255, 162, 65);
+  font-weight: bold;
+  line-height: 1.2;
+}
+.arrow{
+  display: none;
+}
+.text-card p{
+  font-size: 1rem;
+  font-family: "Gadugi";
+  color: rgb(49, 40, 26);
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+}
+.donut{
+  width: 100%;
+}
+.name{
+  margin-right: 30px;
+}
+.form-container{
+  width: 100%;
+}
+}
+@media all and (max-width: 480px) {
+  .form-page{
+    width: 100%;
+  }
+  .form-page{
+    width: 100%;
+  }
+  .login-form, .register-form{
+    width: 70%;
+  }
+  .section1{
+    background: url('/img/banner.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position:top;
+    width: 100%;
+    height: 30vh;
+ }
+ .col3{
+  width: 100%;
+  margin: 3%;
+}
+.column{
+ width: 100%;
+ margin: 0 3%;
+}
+
+.text-card {
+  display: inline-block;
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  z-index: 172;
+  width: 80%;
+  
+}
+.text-card h1 {  font-size: 1.4rempx;
+  font-family: "Gadugi";
+  color: rgb(255, 162, 65);
+  font-weight: bold;
+  line-height: 1.2;
+}
+.arrow{
+  display: none;
+}
+.text-card p{
+  font-size: 1rem;
+  font-family: "Gadugi";
+  color: rgb(49, 40, 26);
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+}
+.donut{
+  width: 50%;
+}
+.name{
+  margin-right: 30px;
+}
+.form-container{
+  width: 100%;
+}
+.donut-shapes img{
+  width: 25%;
+}
+}
